@@ -13,6 +13,6 @@ $ mvn camel:run
 * In a separate window, run the test unit.
 ```
 $ mvn -Dtest=TestListener test
-
+```
 # Maintainer
 [Brian Kresge](mailto:brian.kresge@gmail.com)
