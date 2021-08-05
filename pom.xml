@@ -89,7 +89,11 @@
         <artifactId>hapi-structures-v25</artifactId>
         <version>${hapi.version.stable}</version>
     </dependency>
-	
+	<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>2.5.3</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -122,6 +126,14 @@
             	</fileApplicationContextUri>
             </configuration>
         </plugin>
+        <plugin>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-maven-plugin</artifactId>
+        	<version>2.5.3</version>
+        	<configuration>
+        		<mainClass>hl7Integration.camle.CamelApp</mainClass>
+        	</configuration>
+    	</plugin>
       </plugins>
   </build>
 </project>

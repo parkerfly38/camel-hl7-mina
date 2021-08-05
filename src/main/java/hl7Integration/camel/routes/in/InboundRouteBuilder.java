@@ -11,7 +11,11 @@ import ca.uhn.hl7v2.model.Message;
 import ca.uhn.hl7v2.parser.PipeParser;
 
 import org.springframework.stereotype.Component;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
+@EnableAutoConfiguration
 @Component
 public class InboundRouteBuilder extends RouteBuilder {
 
